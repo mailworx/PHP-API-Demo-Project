@@ -95,10 +95,10 @@ if (!is_null($importedData) && count($importedData['importedSubscribers']) > 0) 
 function getSecurityContext()
 {
     return  array(
-        'Account' => 'eworx testaccount',   // The name of your mailworx account.
-        'Username' => 'Webservice TestApp User', // Your mailworx username.
-        'Password' => 'Passwort1', // Your mailworx password.
-        'Source'  => 'mwTestApp'
+        'Account' => '[AccountName]',   // The name of your mailworx account.
+        'Username' => '[Username]', // Your mailworx username.
+        'Password' => '[Password]', // Your mailworx password.
+        'Source'  => '[Source]'
          /* The name of your application which wants to access the mailworx webservice.
              You must register your application source at the following page, before you try to access the mailworx webservice: 
              http://www.mailworx.info/de/api/api-schnittstelle-erstellen*/
