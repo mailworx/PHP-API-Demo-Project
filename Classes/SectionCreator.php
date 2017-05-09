@@ -69,7 +69,7 @@ class SectionCreator {
 
                 $sectionArticle = array(
                     '__type' => \mailworx\Constants::SECTION_TYPE,
-                    'Created' => $createSectionArticleRequest->getTime(date('Y-m-d H:i:s')),
+                    'Created' => $createSectionArticleRequest->getTime(strtotime(date('Y-m-d H:i:s'))),
                     'SectionDefinitionName' => $defintionArticle->Name,
                     'StatisticName' => 'my first article',
                     'Fields' => $fieldsToAdd
@@ -136,7 +136,7 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
                    
                 $twoColoumn = array(
                   '__type' => \mailworx\Constants::SECTION_TYPE,
-                  'Created' => $createSectionTwoColumnsRequest->getTime( date('Y-m-d H:i:s')),
+                  'Created' => $createSectionTwoColumnsRequest->getTime(strtotime(date('Y-m-d H:i:s'))),
                   'SectionDefinitionName' => $defintionTwoColumns->Name,
                   'StatisticName' => 'section with two columns',
                   'Fields' => $fieldsToAdd
@@ -183,7 +183,7 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 
                 $banner = array(
                   '__type' => \mailworx\Constants::SECTION_TYPE,
-                  'Created' => $createSectionBannerRequest->getTime( date('Y-m-d H:i:s')),
+                  'Created' => $createSectionBannerRequest->getTime(strtotime(date('Y-m-d H:i:s'))),
                   'SectionDefinitionName' => $defintionBanner->Name,
                   'StatisticName' => 'section with two columns',
                   'Fields' => $fieldsToAdd
