@@ -76,7 +76,7 @@ if (!is_null($importedData) && count($importedData['importedSubscribers']) > 0) 
                  // If the SendType is set to ABSplit, ABSplitTestSendSettings are needed
                  $sendCampaignRequest->setProperty('Settings', array(
                      '__type' => \mailworx\Constants::MANUAL_SEND_SETTINGS_TYPE,
-                     'SendTime' => $sendCampaignRequest->getTime( date('Y-m-d H:i:s'))
+                     'SendTime' => $sendCampaignRequest->getTime(strtotime(date('Y-m-d H:i:s')))
                  ));
                  $sendCampaignRequest->setProperty('UseIRated', false); // Here is some more info about iRated http://www.mailworx.info/en/irated-technology
                  $sendCampaignRequest->setProperty('UseRTR', true);
